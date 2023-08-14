@@ -1,0 +1,160 @@
+.topbarContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1877f2;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+.topbarLeft {
+  flex: 3;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  justify-content: flex-start;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.logo {
+  color: white;
+}
+.topbarCenter {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.topbarItem {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.searchIcon {
+  margin-left: 5px;
+  font-size: 20px !important ;
+}
+.topbarInput {
+  width: 70%;
+  margin-left: 10px;
+  border: none;
+}
+.topbarInput:focus {
+  outline: none;
+}
+.topbarRight {
+  flex: 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.topbarLinks {
+  display: flex;
+  gap: 15px;
+}
+.topbarLink {
+  color: white;
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.topbarIcons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.topbarIconItem {
+  color: white;
+}
+.topbarIcon {
+  position: relative;
+}
+.topbarIconBadge {
+  color: white;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .topbarIcon {
+    display: none;
+  }
+  .topbarRight {
+    flex: 8;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .topbarIcon {
+    display: none;
+  }
+  .topbarLeft {
+    flex: 4;
+  }
+  .topbarCenter {
+    flex: 8;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .topbarIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topbarContainer {
+    font-size: 10px;
+    display: flex;
+  }
+  .topbarLeft {
+    font-size: 15px;
+    text-align: justify;
+    flex: 4;
+  }
+  .topbarCenter {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+  }
+  .topbarInput {
+    display: none;
+  }
+  .topbarRight {
+    flex: 8;
+  }
+  .topbarItem {
+    width: 40%;
+  }
+
+}
+@media screen and (max-width: 390px) {
+  .topbarContainer {
+  margin:10px;
+  }
+
+}
